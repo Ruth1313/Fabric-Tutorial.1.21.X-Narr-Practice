@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutproalmod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "Tutorial Mod By Narr cause he is retarded",
+	"authors": [
+		"Narr"
+	],
+	"contact": {
+		"homepage": "https://Narr.net/",
+		"sources": "https://github.com/Tutorials_by_Narr/Fabric-Tutorial-1.21.x"
+	},
+	"license": "MIT",
+	"icon": "assets/tutproalmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.narr.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.narr.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"net.narr.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutproalmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
